@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Altixia - License AGPL-3.0 or later -->
+<odoo>
+    <record id="view_personal_information_page_passport" model="ir.ui.view">
+        <field name="name">Partner passport: personal info</field>
+        <field name="model">res.partner</field>
+        <field
+            name="inherit_id"
+            ref="partner_contact_nationality.view_personal_information_page_nationality"
+        />
+        <field name="arch" type="xml">
+            <field name="nationality_id" position="after">
+                <field name="passport_number" />
+                <field name="passport_expiration" />
+            </field>
+        </field>
+    </record>
+</odoo>

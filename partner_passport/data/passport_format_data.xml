@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Altixia - License AGPL-3.0 or later -->
+<!-- Source: Micro Focus IDOL Eduction PII passport grammar examples. -->
+<odoo noupdate="1">
+    <record id="passport_format_at" model="res.partner.passport.format">
+        <field name="country_id" ref="base.at" />
+        <field name="pattern">[A-Z][0-9]{7}</field>
+        <field name="name">1 letter + 7 digits</field>
+    </record>
+    <record id="passport_format_au" model="res.partner.passport.format">
+        <field name="country_id" ref="base.au" />
+        <field name="pattern">[A-Z][0-9]{7}</field>
+        <field name="name">1 letter + 7 digits</field>
+    </record>
+    <record id="passport_format_be" model="res.partner.passport.format">
+        <field name="country_id" ref="base.be" />
+        <field name="pattern">[A-Z]{2}[0-9]{6}</field>
+        <field name="name">2 letters + 6 digits</field>
+    </record>
+    <record id="passport_format_bg" model="res.partner.passport.format">
+        <field name="country_id" ref="base.bg" />
+        <field name="pattern">[0-9]{9}</field>
+        <field name="name">9 digits</field>
+    </record>
+    <record id="passport_format_br" model="res.partner.passport.format">
+        <field name="country_id" ref="base.br" />
+        <field name="pattern">[A-Z]{2}[0-9]{6}</field>
+        <field name="name">2 letters + 6 digits</field>
+    </record>
+    <record id="passport_format_ca" model="res.partner.passport.format">
+        <field name="country_id" ref="base.ca" />
+        <field name="pattern">[A-Z]{2}[0-9]{6}</field>
+        <field name="name">2 letters + 6 digits</field>
+    </record>
+    <record id="passport_format_ch" model="res.partner.passport.format">
+        <field name="country_id" ref="base.ch" />
+        <field name="pattern">[A-Z][0-9]{7}</field>
+        <field name="name">1 letter + 7 digits</field>
+    </record>
+    <record id="passport_format_cn" model="res.partner.passport.format">
+        <field name="country_id" ref="base.cn" />
+        <field name="pattern">[A-Z][0-9]{8}</field>
+        <field name="name">1 letter + 8 digits</field>
+    </record>
+    <record id="passport_format_cz" model="res.partner.passport.format">
+        <field name="country_id" ref="base.cz" />
+        <field name="pattern">[0-9]{8}</field>
+        <field name="name">8 digits</field>
+    </record>
+    <record id="passport_format_de" model="res.partner.passport.format">
+        <field name="country_id" ref="base.de" />
+        <field name="pattern">[A-Z][A-Z0-9]{8}</field>
+        <field name="name">1 letter + 8 alphanumeric</field>
+    </record>
+    <record id="passport_format_dk" model="res.partner.passport.format">
+        <field name="country_id" ref="base.dk" />
+        <field name="pattern">[0-9]{9}</field>
+        <field name="name">9 digits</field>
+    </record>
+    <record id="passport_format_es" model="res.partner.passport.format">
+        <field name="country_id" ref="base.es" />
+        <field name="pattern">[A-Z]{2}[0-9]{6}</field>
+        <field name="name">2 letters + 6 digits</field>
+    </record>
+    <record id="passport_format_fr" model="res.partner.passport.format">
+        <field name="country_id" ref="base.fr" />
+        <field name="pattern">[0-9]{2}[A-Z]{2}[0-9]{5}</field>
+        <field name="name">2 digits + 2 letters + 5 digits</field>
+    </record>
+    <record id="passport_format_gb" model="res.partner.passport.format">
+        <field name="country_id" ref="base.uk" />
+        <field name="pattern">[0-9]{9}</field>
+        <field name="name">9 digits</field>
+    </record>
+    <record id="passport_format_hu" model="res.partner.passport.format">
+        <field name="country_id" ref="base.hu" />
+        <field name="pattern">[A-Z]{2}[0-9]{7}</field>
+        <field name="name">2 letters + 7 digits</field>
+    </record>
+    <record id="passport_format_jp" model="res.partner.passport.format">
+        <field name="country_id" ref="base.jp" />
+        <field name="pattern">[A-Z]{2}[0-9]{7}</field>
+        <field name="name">2 letters + 7 digits</field>
+    </record>
+    <record id="passport_format_kr" model="res.partner.passport.format">
+        <field name="country_id" ref="base.kr" />
+        <field name="pattern">[A-Z][0-9]{8}</field>
+        <field name="name">1 letter + 8 digits</field>
+    </record>
+    <record id="passport_format_pl" model="res.partner.passport.format">
+        <field name="country_id" ref="base.pl" />
+        <field name="pattern">[A-Z]{2} ?[0-9]{7}</field>
+        <field name="name">2 letters + 7 digits (optional space)</field>
+    </record>
+    <record id="passport_format_us" model="res.partner.passport.format">
+        <field name="country_id" ref="base.us" />
+        <field name="pattern">[0-9]{9}</field>
+        <field name="name">9 digits</field>
+    </record>
+</odoo>

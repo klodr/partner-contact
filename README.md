@@ -28,6 +28,7 @@ addon | version | maintainers | summary
 [base_location_geonames_import](base_location_geonames_import/) | 18.0.1.0.0 |  | Import zip entries from Geonames
 [base_location_nuts](base_location_nuts/) | 18.0.1.3.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> <a href='https://github.com/Andrii9090'><img src='https://github.com/Andrii9090.png' width='32' height='32' style='border-radius:50%;' alt='Andrii9090'/></a> | NUTS Regions
 [base_partner_company_group](base_partner_company_group/) | 18.0.1.1.0 |  | Adds the possibility to add a company group to a company
+[base_partner_merge_user_consolidation](base_partner_merge_user_consolidation/) | 18.0.1.0.0 | <a href='https://github.com/ntsirintanis'><img src='https://github.com/ntsirintanis.png' width='32' height='32' style='border-radius:50%;' alt='ntsirintanis'/></a> | After merging contacts, automatically consolidate their linked user accounts.
 [base_partner_sequence](base_partner_sequence/) | 18.0.1.2.0 |  | Sets customer's code from a sequence
 [crm_partner_company_group](crm_partner_company_group/) | 18.0.2.0.0 |  | Adds the possibility to add a company group to a company
 [partner_accreditation](partner_accreditation/) | 18.0.1.0.0 | <a href='https://github.com/victor-champonnois'><img src='https://github.com/victor-champonnois.png' width='32' height='32' style='border-radius:50%;' alt='victor-champonnois'/></a> | Add Accreditation to Partners
@@ -87,6 +88,7 @@ addon | version | maintainers | summary
 [partner_multi_relation](partner_multi_relation/) | 18.0.1.0.0 |  | Partner Relations
 [partner_multi_relation_archive_propagate](partner_multi_relation_archive_propagate/) | 18.0.1.0.0 | <a href='https://github.com/ntsirintanis'><img src='https://github.com/ntsirintanis.png' width='32' height='32' style='border-radius:50%;' alt='ntsirintanis'/></a> | Propagate archiving via partner_multi_relation relations
 [partner_multi_relation_function](partner_multi_relation_function/) | 18.0.1.0.0 | <a href='https://github.com/NL66278'><img src='https://github.com/NL66278.png' width='32' height='32' style='border-radius:50%;' alt='NL66278'/></a> | Partner Relation Functions
+[partner_noncommercial](partner_noncommercial/) | 18.0.1.0.0 |  | Partner Non Commercial
 [partner_phone_secondary](partner_phone_secondary/) | 18.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Adds a secondary phone number on partners
 [partner_phonecall_schedule](partner_phonecall_schedule/) | 18.0.1.0.0 |  | Track the time and days your partners expect phone calls
 [partner_pricelist_search](partner_pricelist_search/) | 18.0.1.0.0 |  | Partner pricelist search

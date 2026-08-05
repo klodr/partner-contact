@@ -77,3 +77,36 @@ class UserCase(PersonCase, MailInstalled):
         else:
             # Run tests
             super().tearDown()
+
+
+class CompanyByIsCompanyCase(TransactionCase):
+    """A company created with ``is_company`` must keep its whole name.
+
+    ``company_type`` is only the selection-shaped mirror of ``is_company``
+    that the form uses. Core code and API callers set ``is_company``, and
+    the split must be skipped just the same — a company has no first name,
+    let alone a middle one.
+    """
+
+    def test_name_is_not_split(self):
+        partner = self.env["res.partner"].create(
+            {"name": "Companies Registration Office", "is_company": True}
+        )
+        self.assertEqual(partner.name, "Companies Registration Office")
+        self.assertEqual(partner.lastname, "Companies Registration Office")
+        self.assertFalse(partner.firstname)
+
+    def test_explicit_person_still_splits(self):
+        """``is_company=False`` must not change the existing behaviour."""
+        partner = self.env["res.partner"].create(
+            {"name": "Núñez Fernán", "is_company": False}
+        )
+        self.assertEqual(partner.firstname, "Núñez")
+        self.assertEqual(partner.lastname, "Fernán")
+
+    def test_company_type_keeps_working(self):
+        """The historical entry point must stay intact."""
+        partner = self.env["res.partner"].create(
+            {"name": "Companies Registration Office", "company_type": "company"}
+        )
+        self.assertEqual(partner.name, "Companies Registration Office")

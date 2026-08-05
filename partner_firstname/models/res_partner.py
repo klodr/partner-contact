@@ -59,7 +59,15 @@ class ResPartner(models.Model):
         created_partners = self.browse()
         for vals in vals_list:
             partner_context = dict(self.env.context)
-            is_company = vals.get("company_type") == "company"
+            # ``is_company`` is the stored field; ``company_type`` is only the
+            # selection-shaped mirror Odoo exposes on the form. Core code and
+            # most API callers set ``is_company`` directly, so looking at
+            # ``company_type`` alone silently splits a company name into
+            # firstname/lastname parts — and any middle word is then lost from
+            # the displayed name when partner_middlename is installed.
+            is_company = bool(vals.get("is_company")) or (
+                vals.get("company_type") == "company"
+            )
             if not is_company and self.name_fields_in_vals(vals) and "name" in vals:
                 del vals["name"]
                 partner_context.pop("default_name", None)

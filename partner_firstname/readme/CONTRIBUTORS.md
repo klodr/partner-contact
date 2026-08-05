@@ -22,3 +22,4 @@
   - Simone Rubino \<<simone.rubino@aion-tech.it>\>
 - Stesi Consulting srl \<<https://stesi.consulting/>\>:
   - Michele Di Croce \<<dicroce.m@stesi.consulting>\>
+- Claude Perrin <klodr@users.noreply.github.com>
